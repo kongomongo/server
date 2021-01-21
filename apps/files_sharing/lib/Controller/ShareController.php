@@ -712,6 +712,8 @@ class ShareController extends AuthPublicShareController {
 			} else {
 				$subject = Downloads::SUBJECT_PUBLIC_SHARED_FOLDER_DOWNLOADED;
 			}
+			// svk: log IP address on download
+			array_push($parameters, $_SERVER['REMOTE_ADDR']);
 		}
 
 		$this->publishActivity($subject, $parameters, $share->getSharedBy(), $fileId, $userPath);

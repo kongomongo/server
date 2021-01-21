@@ -73,7 +73,7 @@ class Downloads extends Base {
 
 		if ($event->getSubject() === self::SUBJECT_PUBLIC_SHARED_FILE_DOWNLOADED ||
 			$event->getSubject() === self::SUBJECT_PUBLIC_SHARED_FOLDER_DOWNLOADED) {
-			$subject = $this->l->t('{file} downloaded via public link');
+			$subject = $this->l->t('{file} downloaded by {gk_ip} via public link');
 		} elseif ($event->getSubject() === self::SUBJECT_SHARED_FILE_BY_EMAIL_DOWNLOADED ||
 			$event->getSubject() === self::SUBJECT_SHARED_FOLDER_BY_EMAIL_DOWNLOADED) {
 			$subject = $this->l->t('{email} downloaded {file}');
@@ -105,6 +105,11 @@ class Downloads extends Base {
 			case self::SUBJECT_PUBLIC_SHARED_FOLDER_DOWNLOADED:
 				return [
 					'file' => $this->getFile($parameters[0], $event),
+					'gk_ip' => [
+						'type' => 'user',
+						'id' => end($parameters),
+						'name' => end($parameters),
+					]
 				];
 			case self::SUBJECT_SHARED_FILE_BY_EMAIL_DOWNLOADED:
 			case self::SUBJECT_SHARED_FOLDER_BY_EMAIL_DOWNLOADED:
