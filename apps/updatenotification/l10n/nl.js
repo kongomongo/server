@@ -23,12 +23,12 @@ OC.L10N.register(
     "A non-default update server is in use to be checked for updates:" : "Een niet-standaard updateserver is in gebruik om te worden gecontroleerd op updates:",
     "Update channel:" : "Bijwerkkanaal:",
     "You can always update to a newer version. But you can never downgrade to a more stable version." : "Je kan altijd naar een nieuwere versie, maar je kan nooit terug naar een oudere stabielere versie.",
-    "Note that after a new release it can take some time before it shows up here. We roll out new versions spread out over time to our users and sometimes skip a version when issues are found." : "Houd er rekening mee dat het enige tijd kan duren voordat na een nieuwe versie hier verschijnt. We verspreiden nieuwe versies over de tijd aan onze gebruikers en soms slaan we een versie over als er problemen zijn gevonden.",
     "Notify members of the following groups about available updates:" : "Geef een melding over beschikbare updates aan leden van de volgende groepen:",
     "Only notification for app updates are available." : "Er zijn alleen meldingen voor apps beschikbaar.",
     "The selected update channel makes dedicated notifications for the server obsolete." : "Het geselecteerde updatekanaal maakt overbodig om serverspecifieke meldingen apart te genereren.",
     "The selected update channel does not support updates of the server." : "Het geselecteerde updatekanaal ondersteunt geen updates voor de server.",
     "A new version is available: <strong>{newVersionString}</strong>" : "Er is een nieuwe versie beschikbaar: <strong>{newVersionString}</strong>",
+    "Note that after a new release the update only shows up after the first minor release or later. We roll out new versions spread out over time to our users and sometimes skip a version when issues are found. Learn more about updates and release channels at {link}" : "Let op dat na een nieuwe release de update pas verschijnt na de eerste secundaire release of later. We introduceren nieuwe versies verspreid over de tijd voor onze gebruikers en slaan soms een versie over wanneer er problemen worden gevonden. Lees meer over updates en releasekanalen op {link}",
     "Checked on {lastCheckedDate}" : "Gecontroleerd op {lastCheckedDate}",
     "Checking apps for compatible updates" : "Apps controleren op compatibele updates",
     "Please make sure your config.php does not set <samp>appstoreenabled</samp> to false." : "Zorg ervoor dat je in config.php <samp>appstoreenabled</samp> niet op 'false' zet.",
@@ -41,6 +41,7 @@ OC.L10N.register(
     "The most recent stable version. It is suited for regular use and will always update to the latest major version." : "De meest recente stabiele versie. Het is geschikt voor normaal gebruik en werkt altijd bij naar de laatste hoofdversie.",
     "Beta" : "Beta",
     "A pre-release version only for testing new features, not for production environments." : "Een vroeg vrijgegeven versie, alleen bedoeld om nieuwe functies te testen. Niet voor productieomgevingen.",
-    "_<strong>%n</strong> app has no update for this version available_::_<strong>%n</strong> apps have no update for this version available_" : ["<strong>%n</strong> app heeft geen update voor deze versie beschikbaar","<strong>%n</strong> apps hebben geen update voor deze versie beschikbaar"]
+    "_<strong>%n</strong> app has no update for this version available_::_<strong>%n</strong> apps have no update for this version available_" : ["<strong>%n</strong> app heeft geen update voor deze versie beschikbaar","<strong>%n</strong> apps hebben geen update voor deze versie beschikbaar"],
+    "Note that after a new release it can take some time before it shows up here. We roll out new versions spread out over time to our users and sometimes skip a version when issues are found." : "Houd er rekening mee dat het enige tijd kan duren voordat na een nieuwe versie hier verschijnt. We verspreiden nieuwe versies over de tijd aan onze gebruikers en soms slaan we een versie over als er problemen zijn gevonden."
 },
 "nplurals=2; plural=(n != 1);");
